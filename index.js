@@ -28,8 +28,8 @@ class Student extends Human{
     #marks = null
     #visits = null
     #current = null
-    constructor(name, age) {
-        super(2,2,2,1);
+    constructor(name, age, legs, hands, ears, heads) {
+        super(legs,hands,ears,heads);
         this.name = name
         this.age = age
         this.#marks = Array(10)
@@ -78,6 +78,6 @@ class Student extends Human{
 
 }
 
-const giraffe = new Student('Animal', 5)
+const giraffe = new Student('Animal', 5,2,2,2,1)
 
 console.log(giraffe.run());
